@@ -37,6 +37,9 @@
 	
 	<div id="imageframe">
 		
+		<div class="textbox">
+			<?=$this->load->view('text/page1')?>
+		</div>
 		
 	</div>
 

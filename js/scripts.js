@@ -4,12 +4,27 @@ var angle = 0;
 function resizeImage() {
    // alert("I'm done resizing for the moment");
     var bodyheight = $(window).height();
+    var bodywidth = $(window).width();
    
     var imageresize = bodyheight - 250;
     
     $('#imageframe').animate({
     	height: imageresize
     }, 80);
+    
+    if(bodywidth < 500) {
+    	 $('.textbox').animate({
+    	width: "300px"
+    }, 80);
+    
+    
+    
+    };
+    if(bodywidth > 500) {
+    	 $('.textbox').animate({
+    	width: "400px"
+    }, 80);
+    };
    // $("#sidebar").height(bodyheight);
 };
 
@@ -47,7 +62,8 @@ function opensite() {
    
    loaderspin();
         
-      $("#imageframe").delay(duration + 500).fadeIn(2000)
+      $("#imageframe").delay(duration + 500).fadeIn(2000);
+      $(".textbox").delay(duration + 1000).fadeIn(2000)
 	
 };
 
@@ -59,7 +75,10 @@ function loaderspin() {
             duration:6000,
             angle: 0, 
             animateTo:2000
-         });
+         },
+         $('.loaderimg').delay(1800).fadeOut()
+         
+         );
          
 	
 };  

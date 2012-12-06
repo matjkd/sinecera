@@ -131,6 +131,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3dcd0', end
 		z-index:300;
 		
 	}
+	.textbox {
+		display:none;
+		position:relative;
+		top:100px;
+		width:400px;
+		padding:20px;
+		color:#C9C3B6;
+		background-color: rgba(42, 44, 44, 0.9);
+background: rgba(42, 44, 44, 0.9);
+		margin:0 auto;
+	}
 	.centerP {
 		margin-top:20px;
 		text-align:center;
