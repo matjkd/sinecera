@@ -8,9 +8,7 @@ function resizeImage() {
    
     var imageresize = bodyheight - 250;
     
-    $('#imageframe').animate({
-    	height: imageresize
-    }, 80);
+  
     
     if(bodywidth < 500) {
     	 $('.textbox').animate({
@@ -23,6 +21,10 @@ function resizeImage() {
     if(bodywidth > 500) {
     	 $('.textbox').animate({
     	width: "400px"
+    }, 80);
+    
+      $('#imageframe').animate({
+    	height: imageresize
     }, 80);
     };
    // $("#sidebar").height(bodyheight);

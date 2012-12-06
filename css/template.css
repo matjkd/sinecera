@@ -9,7 +9,7 @@ min-height: 100%;
 padding:0px;
 margin:0px;
 		height:100%;
-		font: 16px/24px normal;
+		font: 14px/24px normal;
 		font-family: "freight-sans-pro",Helvetica, Arial, sans-serif;
 		color: #4F5155;
 	}
@@ -83,11 +83,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3dcd0', end
 		
 		
 	}
-	#logo {
+	@media screen and (min-width: 500px) {  
+ #logo {
 		display:block;
 		width:500px;
 		margin:0 auto 0 auto;
 	}
+}
+	@media screen and (max-width: 500px) {  
+ #logo {
+		display:block;
+		width:300px;
+		margin:0 auto 0 auto;
+	}
+}
+	
 	.loader {
 		position:absolute;
 		width:100%;

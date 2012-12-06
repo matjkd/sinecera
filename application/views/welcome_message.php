@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<!-- Meta tags that set up the page as a mobile page   -->
+<meta name = "viewport" content = "user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+
 	<script type="text/javascript" src="//use.typekit.net/suh2via.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<title>Welcome to Sinecera Design</title>
 
 <link rel="stylesheet" src="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="<?= base_url() ?>css/template.css">
+<link rel="stylesheet" href="<?= base_url() ?>css/template.css">
 	
 
 <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
