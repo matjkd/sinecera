@@ -5,15 +5,25 @@ function resizeImage() {
    // alert("I'm done resizing for the moment");
     var bodyheight = $(window).height();
     var bodywidth = $(window).width();
-   
+   var textboxheight = $('.textbox').height();
+   var topmenuheight = $('#topmenu').height();
+   var headerheight = $('#containerback').height();
+   var visiblecontent = textboxheight + 50 + topmenuheight + headerheight;
     var imageresize = bodyheight - 250;
-    
+   
   
     
-    if(bodywidth < 500) {
+    if(bodywidth < 500 ) {
     	 $('.textbox').animate({
-    	width: "300px"
+    	width: "250px"
     }, 80);
+    
+    
+    if(bodyheight > 599){	
+    	 $('#imageframe').animate({
+    	height: imageresize
+    }, 80);
+    }
     
     
     
@@ -23,10 +33,32 @@ function resizeImage() {
     	width: "400px"
     }, 80);
     
-      $('#imageframe').animate({
+      if(bodyheight > 599){	
+    	 $('#imageframe').animate({
     	height: imageresize
     }, 80);
+    }
+    
     };
+    
+    if(bodyheight < 600) {
+    	 $('#footerContainer').animate({
+    	opacity: 0
+    }, 80);
+    $('#imageframe').animate({
+    	height: visiblecontent
+    }, 80);
+    }
+    
+     if(bodyheight > 599) {
+    	 $('#footerContainer').animate({
+    	opacity: 1
+    }, 80);
+    $('#imageframe').animate({
+    	height: imageresize 
+    }, 80);
+    }
+    
    // $("#sidebar").height(bodyheight);
 };
 
@@ -95,6 +127,8 @@ $(document).ready(function(){
 	
 	resizeImage();
 	
+	
+	
 		$("#logo").click(function() {
         
             $(this).stop().animate({
@@ -111,7 +145,10 @@ $(document).ready(function(){
              },
             150
             );
+            resizeImage();
       	 });
+      	 
+      
 
 //resize main image depending on window size
 $(window).resize(function() {

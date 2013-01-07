@@ -31,11 +31,11 @@
 </div>
 
 <div id="footerContainer">
-	test
+	
 </div>
 
 <div id="topmenu">
-		item1 item2
+		
 	</div>
 	
 	<div id="imageframe">

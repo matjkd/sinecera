@@ -1,7 +1,12 @@
-<p>Lorem ipsum dolor sit amet, iuvaret nonumes cotidieque te qui, cu errem soleat his.
- Ignota salutatus usu cu. Errem postulant qui an. Vis ne congue platonem, eleifend
-  comprehensam eam te. Pro at clita pertinax dissentiunt.</p>
+<div align="center">
+<h2>Get in touch</h2>
+<p>Alia Nassar<br/>
+	106 Walton Street,<br/>
+	SW3 2JJ
+</p>
 
-<p>Mei lucilius pericula at. Minim elitr comprehensam ex mei, an duo labore partiendo 
-euripidis. Mutat partem singulis te mei, justo tritani honestatis eum ex. Veritus 
-vocibus adipiscing id quo, mea ex pericula democritum voluptatibus, platonem reformidans vim ea.</p>
+<p>London Mobile: +44 (0) 7919148197<br/>
+	Egypt Mobile: +2 (0) 1004940012<br/>
+	Email: <a href="mailto:alia@sineceradesign.com">alia@sineceradesign.com</a>
+</p>
+</div>
